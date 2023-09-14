@@ -1,0 +1,35 @@
+<h2>Education Information</h2>
+<div class="formdata">
+    <form [formGroup]="myeducationform" (ngSubmit)="submitData()">
+        <div class="form-row">
+        <div class="form-group col-6">
+            <label for="eduType">EducationType</label>
+            <select name="type" id="eduType" class="form-control" formControlName="educationType">
+                <option>10th</option>
+                <option>12th</option>
+                <option>Graduation</option>
+                <option>Post-Graduation</option>
+            </select>
+        </div>
+        <div class="form-group col-6">
+            <label for="Passyear">Passing Year</label>
+            <input type="number" class="form-control" id="Passyear" formControlName="passingYear">
+        </div>
+        </div>
+        <div class="form-row">
+            <div class="col-8 form-group">
+                <label for="Sname">School/Collage Name</label>
+                <input type="text" id="Sname" class="form-control" formControlName="schoolName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 form-group">
+                <label for="percentage">Percentage</label>
+                <input type="number" class="form-control" formControlName="percentage">
+            </div>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-primary" type="submit" > Register </button>
+        </div>
+    </form>
+</div>
